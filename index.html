@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="icon" href="favicon-32x32.png">
+
+    <title>Digital Hub</title>
+
+
+
+
+
+</head>
+
+<body style="background-color:#F9F7CF;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="favicon-32x32.png" alt="logo">
+            <a id="demo1" class="navbar-brand" href="#">  &nbsp;Digital Hub</a>
+            <script>
+                document.getElementById("demo1").onmouseover = function () { mouseOver1() };
+                document.getElementById("demo1").onmouseout = function () { mouseOut1() };
+
+                function mouseOver1() {
+                    document.getElementById("demo1").style.color = "red";
+                }
+
+                function mouseOut1() {
+                    document.getElementById("demo1").style.color = "white";
+                }
+            </script>
+            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Phones</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other Products</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                            <li><a class="dropdown-item" href="#">Keybords</a></li>
+                            <li><a class="dropdown-item" href="#">Mouse</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" name="name" id="name" placeholder="Type here to search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" onclick="fun()" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-success">Sign-up</button>
+                    <button class="btn btn-success">Login</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Grab your deals!</strong> check out today's best offers
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="lap1.jpg" class="d-block w-100" alt="Laptop">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="product.html"><h5>Best laptops</h5></a>
+                        <p>World's Best Processor for Creating, Collaboration, Productivity & Gaming. AI-enhanced...                        </p>
+                        <button class="btn btn-success">Macbook</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="lap3.jpg" class="d-block w-100" alt="One Plus">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Best features</h5>
+                        <p>Get the best Laptops Online from Digital Hub. Shop from top Laptop Brands like Apple, HP, Lenovo, Microsoft, Dell, iBall & more.                        </p>
+                        <button class="btn btn-danger">Apple Macbook Air (M1 chipset)</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="lap2.jpg" class="d-block w-100" alt="HP">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Best deals</h5>
+                        <p>Get Best Laptop Prices Online in India. Choose from Ultra-thin Laptop, Gaming Laptop from brands like HP, Dell, Lenovo, Acer, and avail great ...</p>
+                        <button class="btn btn-info">Dell XPS 17</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--<table align="center">-->
+
+
+        <div class = "row pt-3">
+            <div class="col-4 ">
+                <div class="container my-4" style="width: 23rem;">
+                    <img src="laptop.webp" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptops</h5>
+                        <p class="card-text" id="demo3">Looking to buy laptop for your home or office? Choose from standard, touchscreen or gaming. Shop our brands: Pavilion, Envy, Spectre, ...</p>
+                        <script>
+                            document.getElementById("demo3").onmouseover = function () { mouseOver() };
+                            document.getElementById("demo3").onmouseout = function () { mouseOut() };
+            
+                            function mouseOver() {
+                                document.getElementById("demo3").style.color = "red";
+                            }
+            
+                            function mouseOut() {
+                                document.getElementById("demo3").style.color = "black";
+                            }
+                        </script>
+                        
+                        <a href="#" class="btn btn-primary" id="text">Shop Now</a>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4  ">
+                <div class="container my-4" style="width: 23rem;">
+                    <img src="phone.jpg" class="card-img-top" alt="Smartphone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphones</h5>
+                        
+                        
+                        <p id="demo6" class="card-text">Explore the latest collection of Smartphones online from popular brands like Apple, Samsung, Motorola, Vivo & many more at Digital Hub. Shop NOW!
+                            <script>
+                                document.getElementById("demo6").onmouseover = function () { mouseOver6() };
+                                document.getElementById("demo6").onmouseout = function () { mouseOut6() };
+                
+                                function mouseOver6() {
+                                    document.getElementById("demo6").style.color = "red";
+                                }
+                
+                                function mouseOut6() {
+                                    document.getElementById("demo6").style.color = "black";
+                                }
+                            </script>
+                        </p>
+                        <a id="demo5" href="#" class="btn btn-primary">Shop Now</a>
+                        <script>
+                            document.getElementById("demo5").onmouseover = function () { mouseOver5() };
+                            document.getElementById("demo5").onmouseout = function () { mouseOut5() };
+            
+                            function mouseOver5() {
+                                document.getElementById("demo5").style.color = "red";
+                            }
+            
+                            function mouseOut5() {
+                                document.getElementById("demo5").style.color = "white";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4  ">
+                <div class="container my-4" style="width: 23rem;">
+                    <img src="tablet.webp" class="card-img-top" alt="Tablet">
+                    <div class="card-body">
+                        <h5 class="card-title">Tablets</h5>
+                        <p class="card-text">Tablets : Shop for android tablet & Apple tablets online at best prices in India at Digital Hub.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
+        
+    
+    <!--<table align="center">-->
+        <div class = "row pt-3">
+                <div class="col-4  ">
+                <div class="container my-4" style="width: 23rem;">
+                <img src="printer.jpg" class="card-img-top" alt="printer">
+                <div class="card-body">
+                    <h5 class="card-title">Printers</h5>
+                    <p class="card-text">Buy Printers online at low prices in India at Digital Hub. Shop Printers from popular brands such as HP, Canon, Epson and ...
+                    </p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+                </div>
+                </div>
+            
+                <div class="col-4  ">
+                <div class="container my-4" style="width: 23rem;">
+                    <img src="watch.png" class="card-img-top" alt="Smartwatch">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watches</h5>
+                        <p class="card-text">Buy Smart Watches from top brands like Fossil, Samsung & more online. Shop for Smart Watches in various Strap styles, Dial shapes & more at ...</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+               </div>
+           
+               <div class="col-4  ">
+                <div class="container my-4" style="width: 23rem;">
+                    <img src="keyboard.jpg" class="card-img-top" alt="Keyboard">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboards</h5>
+                        <p class="card-text">Buy Keyboards online at low prices in India at Digital Hub. Shop Keyboards from popular brands such as Dell, Zebronics, LogiTech and more for best ...</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+
+
+    <div style="background-color: #BE9FE1;">
+    <footer class="py-5">
+        <div class="row">
+          <div class="col-2">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Company</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Brands</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Contacts</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact number</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email</a></li>
+             
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>© 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+        <br>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+<script type="text/JavaScript">
+function fun()
+{
+    var name = document.getElementById('name').value;
+    alert(name);
+}    
+text.onmouseover=function()
+{
+    text.innerHTML='Continue';  
+}
+text.onmouseout=function()
+{
+    text.innerHTML='Shop now';  
+}
+
+</script>
+</html>
